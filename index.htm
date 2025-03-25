@@ -113,15 +113,15 @@
             padding: 25px; /* Reduced padding */
             box-sizing: border-box;
             overflow: hidden; /* Prevent content from spilling out */
-            border: 2px solid #f4c01e; /* Adding 2px yellow border */
+            border: 1px solid #f4c01e; /* Changed from 2px to 1px yellow border */
         }
         
         .center-overlay h1 {
-            color: #f4c01e; /* Gold/yellow color */
-            font-size: 2rem; /* Reduced font size */
+            color: #f4c01e;
+            margin-top: 0;
             margin-bottom: 0.8rem; /* Reduced margin */
-            font-weight: bold;
-            padding: 0;
+            font-size: 2.2rem; /* Increased font size */
+            width: 95%; /* Make title width match paragraph width */
         }
         
         .center-overlay p {
@@ -184,6 +184,8 @@
         </p>
         
         <form action="https://submit-form.com/dAk8yIQKV" method="post" class="email-form">
+            <input type="hidden" name="_feedback.dark" value="true" />
+            <input type="hidden" name="_feedback.success.title" value="We will notify you when CinePass is available for you!" />
             <input type="email" id="email" name="email" placeholder="Sign up for early access" required 
                   onclick="this.placeholder = ''" 
                   onblur="if(this.value=='') this.placeholder='Sign up for early access'" />

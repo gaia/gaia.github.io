@@ -47,6 +47,11 @@
             object-position: center bottom;
         }
         
+        /* Make sure boat.jpg shows from the top, hiding overflow at the bottom */
+        .item10 img {
+            object-position: center top;
+        }
+        
         .gallery-item:hover img {
             transform: scale(1.05);
         }
@@ -69,7 +74,7 @@
         
         .item4 {
             grid-column: 1 / 4;
-            grid-row: 5 / 9;
+            grid-row: 5 / 7;
         }
         
         .item5 {
@@ -94,7 +99,17 @@
         
         .item9 {
             grid-column: 10 / 13;
-            grid-row: 3 / 9;
+            grid-row: 3 / 5;
+        }
+        
+        .item10 {
+            grid-column: 10 / 13;
+            grid-row: 5 / 9;
+        }
+        
+        .item11 {
+            grid-column: 1 / 4;
+            grid-row: 7 / 9;
         }
         
         /* Center black overlay rectangle */
@@ -103,10 +118,10 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: rgba(0, 0, 0, 0.8);
-            width: calc((100% / 12) * 2.5); /* Width reduced by 50% from 5 to 2.5 */
+            background-color: rgba(0, 0, 0, 0.6);
+            width: calc((100% / 12) * 3.25);
             height: auto; /* Auto height instead of 0 */
-            min-height: 200px; /* Reduced minimum height */
+            min-height: 330px; /* Reduced minimum height */
             z-index: 2;
             display: flex;
             flex-direction: column;
@@ -116,14 +131,14 @@
             padding: 25px; /* Reduced padding */
             box-sizing: border-box;
             overflow: hidden; /* Prevent content from spilling out */
-            border: 1px solid #f4c01e; /* Changed from 2px to 1px yellow border */
+            border: 0.5px solid #f4c01e; /* Changed from 2px to 1px yellow border */
         }
         
         .center-overlay h1 {
             color: #f4c01e;
             margin-top: 0;
             margin-bottom: 0.8rem; /* Reduced margin */
-            font-size: 3rem; /* Increased font size */
+            font-size: 3.5rem; /* Increased font size */
             width: 95%; /* Make title width match paragraph width */
         }
         
@@ -132,10 +147,11 @@
             font-size: 0.8rem; /* Reduced font size */
             line-height: 1.4;
             margin-bottom: 1rem; /* Reduced margin */
-            max-width: 95%;
+            max-width: 85%;
             padding: 0;
-            text-align: left; /* Left-align paragraph text */
-            align-self: flex-start; /* Align paragraph to the left edge of the container */
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         /* Form styles */
@@ -206,7 +222,7 @@
             <img src="images/fashion.jpg" alt="Fashion model with suitcase">
         </div>
         <div class="gallery-item item4">
-            <img src="images/flowers.png" alt="Field of flowers">
+            <img src="images/badboy.jpg" alt="Bad boy portrait">
         </div>
         <div class="gallery-item item5">
             <img src="images/rhino.jpg" alt="Rhino close-up">
@@ -221,7 +237,13 @@
             <img src="images/vietnam.jpg" alt="Night market scene">
         </div>
         <div class="gallery-item item9">
+            <img src="images/dimitry.jpg" alt="Dimitry portrait">
+        </div>
+        <div class="gallery-item item10">
             <img src="images/boat.jpg" alt="Sunset with cross silhouette">
+        </div>
+        <div class="gallery-item item11">
+            <img src="images/eye.jpg" alt="Close-up of an eye">
         </div>
     </div>
 </body>
